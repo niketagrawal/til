@@ -45,6 +45,17 @@ Now, the virtual environment can be activated and run using
 pipenv shell
 ```
 
+***Interesting behavior observed!***
+When the pipenv virtual env is activated by typing `pipenv shell`, the conda environment changes to base! When this env is exited, the env changes back to the new conda env that was active earlier. Is this normal?
+
+[Pipenv documentation](https://pipenv.pypa.io/en/latest/advanced/#pipenv-and-other-python-distributions) says the following.
+To use Pipenv with a third-party Python distribution (e.g. Anaconda), you simply provide the path to the Python binary:
+```
+$ pipenv install --python=/path/to/python
+```
+Does the path to python binary needs to be given each time we use pipenv command like activating the virtual env by launching a shell?
+
+
 ### Best practices for dependency management 
 
 
