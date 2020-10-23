@@ -3,7 +3,7 @@
 Render reproducility and visibility to the software by managing dependencies in a manner that allows easy distribution of the software package by the developer and the replication of the development environment by potential contributors and users.
 
 ### Choosing Conda as development environment for better software reproducibility
-Using conda environment for development provides the possibility for managing the depdnencies in a way that allows the software be distributed and be used by the users who use conda and also those who don't , i.e., using just pip (+ virtual env if desired)
+Using conda environment for development provides the possibility for managing the depdnencies in a way that allows the software to be distributed and used by the users who use conda and also those who don't , i.e., using just pip (+ virtual env if desired)
 
 Conda allows to create isolated virtual environments, as a best practice one environment should be cerated for each project. See conda/conda.md for more information
 
@@ -15,7 +15,7 @@ Use conda package manager to install packages inside conda environment. Using pi
 
 
 ### Dependency management targeting conda users - Export entire conda environment
-Export entire conda environment into a yml file called an environment.yml file. environment.yml is the standard naming convention, generate this file for each project in respective project specific folder. Naming it environment.yml also enables it to be picked by other tools like binder [ref](https://researchsoftwarehour.github.io/sessions/rsh-011/)
+Export entire conda environment into a yml file called an environment.yml file. environment.yml is the standard naming convention, generate this file for each project in respective project specific folder. Naming it environment.yml also enables it to be picked up by other tools ([ref](https://researchsoftwarehour.github.io/sessions/rsh-011/))
 
 
 #### Workflow
@@ -51,6 +51,6 @@ Note that this pip compatible requirements.txt file generated above may still re
 
 Therefore, it is recommended to manually tailor this requirements.txt file to keep only those packages which are actually being imported in the code.
 
-### Project directory structure
+#### Project directory structure
 
 [This](https://stackoverflow.com/questions/48787250/set-up-virtualenv-using-a-requirements-txt-generated-by-conda) shows a typical structure for a python project repository. The project directory contains both environment.yml (for Conda users) and requirements.txt (for pip).
