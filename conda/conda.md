@@ -28,3 +28,11 @@ Activation of virtual env on conda prompt/Git bash does not reflect it system wi
 
 In windows, vscode uses git bash as the default termnal. Activating anaconda environments and using the anaconda python interpreter from here may not be possible. To fix this problem, some changes in the .bashrc and .bash_profile are required as described in [this Stack Overflow issue](https://stackoverflow.com/questions/57560017/stuck-when-setting-up-to-use-anaconda-with-vs-code-and-integrated-git-terminal)
 
+
+### Specifying conda-forge as one of the channels
+ Instead of specifying conda-forge as a channel every time when using the conda instll command, add it to the list of channels using the below commad which will be queried for package installation when using the command conda install <package>
+```
+conda config --add channels conda-forge
+```
+
+
