@@ -24,4 +24,7 @@ conda activate <env-name>
 ### Activation of virtual env has terminal scope.
 Activation of virtual env on conda prompt/Git bash does not reflect it system wide on other active terminals. For e.g., activation of a virtual env on gitbash will not activate it on VScode's terminal. The same operation has to be repeated there too.
 
+### Using Git bash terminal in VS code with Anaconda python interpreter
+
+In windows, vscode uses git bash as the default termnal. Activating anaconda environments and using the anaconda python interpreter from here may not be possible. To fix this problem, some changes in the .bashrc and .bash_profile are required as described in [this Stack Overflow issue](https://stackoverflow.com/questions/57560017/stuck-when-setting-up-to-use-anaconda-with-vs-code-and-integrated-git-terminal)
 
