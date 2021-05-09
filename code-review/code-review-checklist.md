@@ -1,6 +1,6 @@
 ## Introduction
 
-This document presents a checklist for conducting a code review. While some of the points only applys to Python but other points are applicable to other programming languages too.
+This document presents a checklist for conducting a code review. While some of the points only applys to Python but other points are applicable to other programming languages too. This checklist is a work under progress and will be updated in due course with other things to be cosidered while reviewing a Python code.
 
 ### Module docstring
 A docstring at the top of the module providing an overview of what a module does, what other modules it is used by and any other useful details besides just author name and date. 
