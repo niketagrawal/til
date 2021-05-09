@@ -15,4 +15,4 @@ Inspired by https://github.com/bast/til
 
 
 ### Code review
-* [Pointers for code review](https://github.com/niketagrawal/til/blob/master/code-review/code-review.md)
+* [Code review checklist](https://github.com/niketagrawal/til/blob/master/code-review/code-review.md)

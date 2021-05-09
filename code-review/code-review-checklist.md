@@ -1,8 +1,9 @@
 ## Introduction
 
-This document captrures some essential (at least for me) pointers for conducting a code review for a Python code.
+This document presents a checklist for conducting a code review. While some of the points only applys to Python but other points are applicable to other programming languages too.
 
 ### Module docstring
+A docstring at the top of the module providing an overview of what a module does, what other modules it is used by and any other useful details besides just author name and date. 
 
 ### Function docstring
 Beside the usual benefits it also eliminates the need of annotating the function arguments, i.e., stating their data types.
