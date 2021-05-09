@@ -1,6 +1,6 @@
 # til: Today I Learned
 
-This repository is a collection of handy tips, tricks, concepts, troubleshooting techniques and knowledge base related to several aspects of software engineering that I learn on a daily basis. 
+This repository is a collection of handy tips, tricks, concepts, troubleshooting techniques and knowledge base related to several aspects of software engineering that I learn on a regular basis. 
  
 Inspired by https://github.com/bast/til
 
@@ -14,4 +14,5 @@ Inspired by https://github.com/bast/til
 * [To Pipenv or not?](https://github.com/niketagrawal/til/tree/master/pipenv)
 
 
-
+### Code review
+* [Pointers for code review](https://github.com/niketagrawal/til/blob/master/code-review/code-review.md)
