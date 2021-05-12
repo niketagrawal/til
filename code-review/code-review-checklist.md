@@ -1,6 +1,6 @@
 ## Introduction
 
-This document presents a checklist for conducting a code review. While some of the points only applys to Python but other points are applicable to other programming languages too. This checklist is a work under progress and will be updated in due course with other things to be cosidered while reviewing a Python code.
+This document presents a collection of some minor and major suggestions compiled into a checklist for use when conducting a code review. While some of the points only applys to Python but other points are applicable to other programming languages too. This checklist is a work under progress and will be updated in due course with other things to be cosidered while reviewing a Python code.
 
 ### Module docstring
 A docstring at the top of the module providing an overview of what a module does, what other modules it is used by and any other useful details besides just author name and date. 
@@ -9,20 +9,18 @@ A docstring at the top of the module providing an overview of what a module does
 Beside the usual benefits it also eliminates the need of annotating the function arguments, i.e., stating their data types.
 
 
-### DO NOT have comments in the code
-Comments in the code do not serve any purpose. A comment explaining what a certain line or block of lines in a code does is a direct indication that that part of the code needs to be substituted by a function. Give that function a meaningful name inspired by the comments and add what the function does in the docstring. 
+### Get rid of comments in the code
+It is quite common to have comments in the initial versions of the code but you can eventually evolve your code to have no comments.
+In most cases comments actually do not serve any purpose. For example, a comment explaining what a certain line or block of lines in a code does is a direct indication that that part of the code needs to be substituted by a function or should ideally be in the function docstring, or could be eliminated by using better function and variable names . 
 
 ### Use variables to store constants
 Use variables with upper case and underscores to store constants in the code. Declare these variables at the top of the module.
 
-### Do not use import *
-Explicitly state what you wish to import from a specific module
+### Use explicit impots 
+Explicitly state what you wish to import from a specific module instead of using import *. A wildcrad is often not needed for relatively small size modules.
 
 ### Classify imports in standard library, third party and local application imports
 Improves redability 
-
-### use a die function if there isn't anything meaningful to execute in the 'else'
-Make a user defiend function dead() and print something and exit(0) if needed
 
 ### Meaningful variable names
 
