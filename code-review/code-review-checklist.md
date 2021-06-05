@@ -9,7 +9,7 @@ A docstring at the top of the module providing an overview of what a module does
 Beside the usual benefits it also eliminates the need of annotating the function arguments, i.e., stating their data types.
 
 
-### Get rid of comments in the code
+### Get rid of comments in the code 
 It is quite common to have comments in the initial versions of the code but you can eventually evolve your code to have no comments.
 In most cases comments actually do not serve any purpose. For example, a comment explaining what a certain line or block of lines in a code does is a direct indication that that part of the code needs to be substituted by a function or should ideally be in the function docstring, or could be eliminated by using better function and variable names . 
 
@@ -17,7 +17,7 @@ In most cases comments actually do not serve any purpose. For example, a comment
 Use variables with upper case and underscores to store constants in the code. Declare these variables at the top of the module.
 
 ### Use explicit impots 
-Explicitly state what you wish to import from a specific module instead of using import *. A wildcrad is often not needed for relatively small size modules.
+Explicitly state what you wish to import from a specific module instead of using import *. A wildcrad is often not needed for relatively small size modules. Uisng absolute imports over relative imports gives btter readability.
 
 ### Classify imports in standard library, third party and local application imports
 Improves redability 
