@@ -40,5 +40,9 @@ Let the user enter the file input path via command line argument if they are pas
 
 ### Make the functions as atomic as possible.
 
+### Suggestions
+
+- Use static method decorator for methods in a class that are completely independent from other methods and that don't modify class and instance state. This prevents incorrect usage of such methods. Such functions are also easy to test. Inspired by [this](https://realpython.com/instance-class-and-static-methods-demystified/) 
+
 ### References
 1. Clean Code: A handbook of Agile software craftsmanship
