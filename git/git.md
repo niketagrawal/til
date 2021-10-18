@@ -22,8 +22,7 @@ Rebasing cons
 
 ### Merge methods
 
-References:
-- https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github
+References: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github
 
 - A non fast forward merge of a feature branch into the main branch preserves the commits in the feature branch, they are merged to main with a merge commit. This also leads to a non-linear commit history but reviewers can see the commits belong to which feature branch.
 - A fast forward merge will happen if the the main branch is the direct ancestor of the feature branch, i.e., the tip of the main branch is the start point of the feature branch. This will not create a merge commit upon the merge of the feature branch into main, the HEAD pointer of main will simply move to the latest commit in the feature branch. The commit history will be linear but the lack of a merge commit will not give any information about which feature does the change belong to. It would seem as if these commits were made on master directly.  
