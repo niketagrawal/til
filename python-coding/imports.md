@@ -11,7 +11,7 @@ References: <br/>
 https://stackoverflow.com/questions/16981921/relative-imports-in-python-3 - absolute vs relative import<br/>
 https://docs.pytest.org/en/6.2.x/goodpractices.html - basic setup.py content that is need to install the package in development mode.
 
-If there is __init__.py in the same directory as the source code then local installation of the project is not needed. For example, the project structure in [pytemplate](https://github.com/niketagrawal/pytemplate) 
+If there is __init__.py in the same directory as the source code then local installation of the project is not needed. For example, the project structure in [pytemplate](https://github.com/niketagrawal/pytemplate) has __init__.py in the same directory as the soure code, this facilitates running tests by executing 'pytest' from the root directory and not having to install the package in the developmen mode. 
 
 Install the project in editable mode only when you are testing your patch to a package through another project. Ref: https://newbedev.com/when-would-the-e-editable-option-be-useful-with-pip-install In other cases it is not needed and can be skipped to avoid complexities.
 
