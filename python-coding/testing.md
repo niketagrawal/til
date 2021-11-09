@@ -14,3 +14,4 @@ pytest --cov=package
 ```
 pytest --cov-report html:cov_html --cov=package tests/
 ```
+Reference: https://pytest-cov.readthedocs.io/en/latest/reporting.html 
