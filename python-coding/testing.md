@@ -1,5 +1,7 @@
 ### Code coverage
 
+use pytest-cov, install using pip: ```pip install pytest-cov```
+
 ```
 pytest --cov=package 
 ```
