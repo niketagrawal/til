@@ -44,5 +44,7 @@ Let the user enter the file input path via command line argument if they are pas
 
 - Use static method decorator for methods in a class that are completely independent from other methods and that don't modify class and instance state. This prevents incorrect usage of such methods. Such functions are also easy to test. Inspired by [this](https://realpython.com/instance-class-and-static-methods-demystified/) 
 
+[This](https://alan-turing-institute.github.io/rse-course/html/module07_construction_and_design/07_03_refactoring.html#list-of-known-refactorings) is a list of other useful refactoring recommendations 
+
 ### References
 1. Clean Code: A handbook of Agile software craftsmanship
