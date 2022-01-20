@@ -9,9 +9,9 @@ A docstring at the top of the module providing an overview of what a module does
 Beside the usual benefits it also eliminates the need of annotating the function arguments, i.e., stating their data types.
 
 
-### Get rid of elementary comments in the code 
-It is quite common to have comments in the initial versions of the code, but, you can eventually get rid of most of the elementary comments through refactpring, i.e., via proper naming of variables and functions refactor your code to 
-Comments that explain what a certain line or block of lines in a code does are an indication that that part of the code needs to be substituted by a function or should ideally be in the function docstring, or could be eliminated by using better function and variable names . 
+### Replace open verbose comments with docstrings or proper naming of functions
+Open and verbose comments in the initial versions of the code is helpful at the start, but, one can eventually get rid of most of the elementary comments through refactoring, i.e., via proper naming of variables and functions.
+Verbose comments that explain what a certain line or block of lines in a code does are an indication that that part of the code needs to be substituted by a function or should ideally be in the function docstring, or could be eliminated by using better function and variable names . 
 
 ### Use variables to store constants
 Use variables with upper case and underscores to store constants in the code. Declare these variables at the top of the module.
