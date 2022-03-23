@@ -26,3 +26,9 @@ References: https://docs.github.com/en/repositories/configuring-branches-and-mer
 
 - A non fast forward merge of a feature branch into the main branch preserves the commits in the feature branch, they are merged to main with a merge commit. This also leads to a non-linear commit history but reviewers can see the commits belong to which feature branch.
 - A fast forward merge will happen if the the main branch is the direct ancestor of the feature branch, i.e., the tip of the main branch is the start point of the feature branch. This will not create a merge commit upon the merge of the feature branch into main, the HEAD pointer of main will simply move to the latest commit in the feature branch. The commit history will be linear but the lack of a merge commit will not give any information about which feature does the change belong to. It would seem as if these commits were made on master directly.  
+
+
+### Detached HEAD
+
+If you wish to go back to a particular commit in time in a code, checking out the code in a branch is preferable because you can look at the children commits as well.
+If you only check out the commit by using `git checkout <commit hash>` you end up in a detached HEAD state which meansthat that the HEAD is now pointing to a commit and not to a branch (usually the case). This is still fine if you wish to only look around the code, but if you wish to make new commits it won't be possible to track them.
