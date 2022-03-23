@@ -32,3 +32,8 @@ References: https://docs.github.com/en/repositories/configuring-branches-and-mer
 
 If you wish to go back to a particular commit in time in a code, checking out the code in a branch is preferable because you can look at the children commits as well.
 If you only check out the commit by using `git checkout <commit hash>` you end up in a detached HEAD state which meansthat that the HEAD is now pointing to a commit and not to a branch (usually the case). This is still fine if you wish to only look around the code, but if you wish to make new commits it won't be possible to track them. (Ref: Code refinery)
+
+
+### git amend and tags
+
+If a commit that has a tag associated with it has been modified using `git amend`; the tag still points to the old commit hash. (Ref: experiment during the Code refinery workshop). The old commit hash is no longer present in the commit history. 
