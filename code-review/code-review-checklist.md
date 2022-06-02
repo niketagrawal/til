@@ -8,8 +8,8 @@ A docstring at the top of the module providing an overview of what a module does
 ### Function docstring
 Beside the usual benefits it also eliminates the need of annotating the function arguments, i.e., stating their data types.
 
-
-## Capture the 'why a function is implemented and what it does in comments for function docstrings'. The 'how this function works' is covered in the implementation anyway. 
+### Comments
+Capture the 'why a function is implemented and what it does in comments for function docstrings'. The 'how this function works' is covered in the implementation anyway. 
 
 ### Use variables to store constants
 Use variables with upper case and underscores to store constants in the code. Declare these variables at the top of the module.
