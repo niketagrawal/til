@@ -46,3 +46,4 @@ Let the user enter the file input path via command line argument if they are pas
 
 ### References
 1. Clean Code: A handbook of Agile software craftsmanship
+2. Learn Pyhton3 the hard way
